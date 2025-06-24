@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Каталог продукции</title>
+
+  <!-- Стили DearFlip -->
+  <link href="dflip/css/dflip.min.css" rel="stylesheet" />
+  <link href="dflip/css/themify-icons.min.css" rel="stylesheet" />
+
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      background: #fff;
+    }
+    #flipbookContainer {
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Flipbook с отключенным WebGL, но со звуком -->
+  <div
+    class="_df_book"
+    id="flipbookContainer"
+    source="catalog.pdf"
+    webgl="false"
+    sound="true"
+  ></div>
+
+  <!-- Скрипты -->
+  <script src="dflip/js/libs/jquery.min.js"></script>
+  <script src="dflip/js/libs/pdf.min.js"></script>
+  <script src="dflip/js/dflip.min.js"></script>
+
+</body>
+</html>
